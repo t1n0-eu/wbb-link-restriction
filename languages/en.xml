@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.board.canBypassLinkRestriction"><![CDATA[Can use links in posts without restrictions]]></item>
+		<item name="wcf.acp.group.option.user.board.canBypassLinkRestriction.description"><![CDATA[Group members can use links within posts without any restrictions.]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.post_linkrestriction_enable"><![CDATA[Enable link restriction]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_enable.description"><![CDATA[Enables the link restriction. This function disables posts by users with too few posts if they contain external links. This allows a moderator pre-check.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_min_posts"><![CDATA[Minimum post count]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_min_posts.description"><![CDATA[If the user has more post than this value, the link restriction will become inactive.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_enable_image_restriction"><![CDATA[Enhance restriction to images]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_enable_image_restriction.description"><![CDATA[If this is activated, img bbcodes are also considered in posts.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_urls"><![CDATA[Maximum link count]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_urls.description"><![CDATA[The max number of links in a post before the link restriction activates.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_images"><![CDATA[Maximum image count]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_images.description"><![CDATA[The max number of images in a post before the link restriction activates.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_excluded_boards"><![CDATA[Excluded boards]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_excluded_boards.description"><![CDATA[The link restriction is disabled in the selected boards. This is particularly useful for presentational boards.]]></item>
+	</category>
+</language>

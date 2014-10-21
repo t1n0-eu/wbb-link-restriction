@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/eventListener.xsd">
+	<import>
+        <!-- user -->
+		<eventlistener>
+  			<eventclassname><![CDATA[wbb\data\post\ThreadAction]]></eventclassname>
+  			<eventname>initializeAction</eventname>
+  			<listenerclassname><![CDATA[wbb\system\event\listener\ThreadAddFormAntiURLSpamListener]]></listenerclassname>
+  			<environment>user</environment>
+  			<inherit>1</inherit>
+ 		</eventlistener>
+		<eventlistener>
+  			<eventclassname><![CDATA[wbb\data\post\PostAction]]></eventclassname>
+  			<eventname>initializeAction</eventname>
+  			<listenerclassname><![CDATA[wbb\system\event\listener\ThreadAddFormAntiURLSpamListener]]></listenerclassname>
+  			<environment>user</environment>
+  			<inherit>1</inherit>
+ 		</eventlistener>
+        <!-- /user -->               
+	</import>
+</data>

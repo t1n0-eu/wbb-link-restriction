@@ -1,43 +1,56 @@
-# Windows image file caches
+# Linux
+# backup files
+*~
+
+# Windows
+# thumbnails
 Thumbs.db
-ehthumbs.db
 
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# Mac OS X
+# metadata
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-# Thumbnails
+# thumbnails
 ._*
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# Visual Studio PHP
+*.sln
+*.phpproj
+*.puo
+*.suo
+*.cache
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Netbeans
+nbproject/
+catalog.xml
+nbactions.xml
+
+# Eclipse
+.settings/
+.buildpath
+.classpath
+.project
+
+# SVN
+# svn folders
+.svn/
+
+# PHPStorm
+.idea/
+.nameencodings
+.xmlmisc
+.xmlmodules
+.xmlprojectCodeStyle
+.xmlvcs.xml
+*.imlworkspace
+.xml
+
+# Sublime Text 2
+*.sublime-*
+
+# Textmate
+*.tmproj 
+
+# Community Framework
+# Ignore packages build directly in the workspace. They can however be added manually via git add, if wanted.
+*.tar
+*.tar.gz

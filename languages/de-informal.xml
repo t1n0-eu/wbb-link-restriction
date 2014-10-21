@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.board.canBypassLinkRestriction"><![CDATA[Kann Links ohne Beschränkung in Beiträgen verwenden]]></item>
+		<item name="wcf.acp.group.option.user.board.canBypassLinkRestriction.description"><![CDATA[Mitglieder dieser Benutzergruppe können Links beliebig in Beiträgen verwenden, unabhängig von den Anti-Spam Beschränkungen]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.post_linkrestriction_enable"><![CDATA[Linkbeschränkung aktivieren]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_enable.description"><![CDATA[Aktiviert die Linkbeschränkung. Diese deaktiviert neue Beiträge von Benutzern mit wenigen Beiträgen, die externe Links enthalten, sodass diese zuerst von einem Moderator geprüft werden können.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_min_posts"><![CDATA[Mindestbeitragszahl]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_min_posts.description"><![CDATA[Hat der Benutzer mehr Beiträge als die hier angegeben Zahl, greift die Linkbeschränkung nicht mehr.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_enable_image_restriction"><![CDATA[Beschränkung auf Bilder ausweiten]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_enable_image_restriction.description"><![CDATA[Ist diese Option aktiviert, werden auch Bilder in den Beiträgen berücksichtigt. Dies betrifft nur den img-BBCode.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_urls"><![CDATA[Maximale Linkanzahl]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_urls.description"><![CDATA[Maximale Zahl an externen Links, die ein Beitrag enthalten darf, bevor die Linkbeschränkung greift.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_images"><![CDATA[Maximale Bilderanzahl]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_max_images.description"><![CDATA[Maximale Zahl an Bildern, die in ein Beitrag enthalten darf, bevor die Linkbeschränkung greift.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_excluded_boards"><![CDATA[Ausgeschlossene Foren]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_excluded_boards.description"><![CDATA[In den hier ausgewählten Foren greift die Linkbeschränkung nicht. Dies ist beispielsweise für Vorstellungsforen nützlich.]]></item>
+	</category>
+</language>
