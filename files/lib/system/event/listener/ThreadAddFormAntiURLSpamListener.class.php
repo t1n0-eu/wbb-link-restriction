@@ -52,28 +52,26 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 		$returnValues = $obj->getReturnValues();
 		$actionName = $obj->getActionName();
 		
-		if( in_array($className, array('wbb\data\post\ThreadAction', 'wbb\data\post\PostAction')) && $eventName == 'initializeAction' ) {
+		if( in_array($className, array('wbb\data\post\ThreadAction', 'wbb\data\post\PostAction')) ) {
 			switch( $actionName ) {
 				case 'triggerPublication':
 				case 'update':
-					if( in_array($controller, array('AJAXProxy', 'ThreadAdd', 'PostAdd')) ) {
-						$objects = $obj->getObjects();
-						if( empty($objects[0]) ) return;
+					$objects = $obj->getObjects();
+					if( empty($objects[0]) ) return;
+					
+					$data = $objects[0];
 						
-						$data = $objects[0];
-							
-						// check all disablers
-						if ( $data->isDisabled || !POST_LINKRESTRICTION_ENABLE
-							|| WCF::getSession()->getPermission('user.board.canBypassLinkRestriction')
-							|| WCF::getUser()->wbbPosts > POST_LINKRESTRICTION_MIN_POSTS ) return;
-							
-						// get parsed text
-						$text = $this->parse( $data->getMessage() );
-							
-						if( ($this->urlCount > POST_LINKRESTRICTION_MAX_URLS)
-							|| (POST_LINKRESTRICTION_ENABLE_IMAGE_RESTRICTION && $this->imgCount > POST_LINKRESTRICTION_MAX_IMAGES) ) {
-							$obj->disable();
-						}
+					// check all disablers
+					if ( $data->isDisabled || !POST_LINKRESTRICTION_ENABLE
+						|| WCF::getSession()->getPermission('user.board.canBypassLinkRestriction')
+						|| WCF::getUser()->wbbPosts > POST_LINKRESTRICTION_MIN_POSTS ) return;
+						
+					// get parsed text
+					$text = $this->parse( $data->getMessage() );
+						
+					if( ($this->urlCount > POST_LINKRESTRICTION_MAX_URLS)
+						|| (POST_LINKRESTRICTION_ENABLE_IMAGE_RESTRICTION && $this->imgCount > POST_LINKRESTRICTION_MAX_IMAGES) ) {
+						$obj->disable();
 					}
 					break;
 			}
