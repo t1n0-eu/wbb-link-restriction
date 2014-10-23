@@ -5,12 +5,10 @@
 		<packagename language="de">Anti-Spam: Linkbeschränkung</packagename>
 		<packagename language="de-informal">Anti-Spam: Linkbeschränkung</packagename>
 		<packagedescription>Disables user posts if they have a too low post counter and the post contains external URIs.</packagedescription>
-		<packagedescription language="de"><![CDATA[Deaktiviert Beiträge von Benutzern mit zu wenig Beiträgen, falls der Beitrag externe URLs enthält.]]>
-		</packagedescription>
-		<packagedescription language="de-informal"><![CDATA[Deaktiviert Beiträge von Benutzern mit zu wenig Beiträgen, falls der externe Beitrag URLs enthält.]]>
-		</packagedescription>
-		<version>1.1.0</version>
-		<date>2014-10-21</date>
+		<packagedescription language="de"><![CDATA[Deaktiviert Beiträge von Benutzern mit zu wenig Beiträgen, falls der Beitrag externe URLs enthält.]]></packagedescription>
+		<packagedescription language="de-informal"><![CDATA[Deaktiviert Beiträge von Benutzern mit zu wenig Beiträgen, falls der externe Beitrag URLs enthält.]]></packagedescription>
+		<version>1.1.0.1</version>
+		<date>2014-10-23</date>
 		<license>LGPL</license>
 	</packageinformation>
 
@@ -25,6 +23,14 @@
 	</requiredpackages>	
 
 	<instructions type="install">
+		<instruction type="file" application="wbb">files.tar</instruction>
+		<instruction type="option">xml/options.xml</instruction>
+		<instruction type="userGroupOption">xml/groupoptions.xml</instruction>
+		<instruction type="eventListener">xml/eventlistener.xml</instruction>
+		<instruction type="language">languages/*.xml</instruction>
+	</instructions>	
+
+	<instructions type="update" fromversion="*">
 		<instruction type="file" application="wbb">files.tar</instruction>
 		<instruction type="option">xml/options.xml</instruction>
 		<instruction type="userGroupOption">xml/groupoptions.xml</instruction>
