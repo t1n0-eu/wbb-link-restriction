@@ -54,7 +54,7 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 		$returnValues = $obj->getReturnValues();
 		$actionName = $obj->getActionName();
 		
-		switch( $actionName ) {
+		switch ($actionName) {
 			case 'triggerPublication':
 			case 'update':
 				$objects = $obj->getObjects();
