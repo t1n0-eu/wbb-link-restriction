@@ -7,7 +7,7 @@
 		<packagedescription>Disables user posts if they have a too low post counter and the post contains external URIs.</packagedescription>
 		<packagedescription language="de"><![CDATA[Deaktiviert Beiträge von Benutzern mit zu wenig Beiträgen, falls der Beitrag externe URLs enthält.]]></packagedescription>
 		<packagedescription language="de-informal"><![CDATA[Deaktiviert Beiträge von Benutzern mit zu wenig Beiträgen, falls der externe Beitrag URLs enthält.]]></packagedescription>
-		<version>1.1.0.1</version>
+		<version>1.1.1</version>
 		<date>2014-10-23</date>
 		<license>LGPL</license>
 	</packageinformation>
@@ -20,9 +20,9 @@
 	<requiredpackages>
 		<requiredpackage minversion="2.0.0">com.woltlab.wcf</requiredpackage>
 		<requiredpackage minversion="4.0.0">com.woltlab.wbb</requiredpackage>
-	</requiredpackages>	
+	</requiredpackages>
 
-	<instructions type="install">
+	<instructions type="update" fromversion="1.1.0">
 		<instruction type="file" application="wbb">files.tar</instruction>
 		<instruction type="option">xml/options.xml</instruction>
 		<instruction type="userGroupOption">xml/groupoptions.xml</instruction>
@@ -30,7 +30,7 @@
 		<instruction type="language">languages/*.xml</instruction>
 	</instructions>	
 
-	<instructions type="update" fromversion="*">
+	<instructions type="install">
 		<instruction type="file" application="wbb">files.tar</instruction>
 		<instruction type="option">xml/options.xml</instruction>
 		<instruction type="userGroupOption">xml/groupoptions.xml</instruction>
