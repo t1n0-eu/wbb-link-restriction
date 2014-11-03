@@ -120,7 +120,7 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 			$match1 = trim($match[1], '"=\'');
 			$match2 = trim($match[2], '"=\'');
 			if (!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match1) &&
-				!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match1)) {
+				!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match2)) {
 				$count++;
 			}
 		}
