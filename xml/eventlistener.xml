@@ -16,6 +16,6 @@
   			<environment>user</environment>
   			<inherit>1</inherit>
  		</eventlistener>
-        <!-- /user -->               
+        <!-- /user -->
 	</import>
 </data>
