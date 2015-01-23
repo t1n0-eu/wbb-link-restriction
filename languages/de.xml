@@ -13,6 +13,8 @@
 		<item name="wcf.acp.option.post_linkrestriction_enable_image_restriction.description"><![CDATA[Ist diese Option aktiviert, werden auch Bilder in den Beiträgen berücksichtigt. Dies betrifft nur den img-BBCode.]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_urls"><![CDATA[Maximale Linkanzahl]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_urls.description"><![CDATA[Maximale Zahl an externen Links, die ein Beitrag enthalten darf, bevor die Linkbeschränkung greift.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_custom_urls"><![CDATA[Zusätzliche interne URLs]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_custom_urls.description"><![CDATA[Eine komma-separierte Liste von zusätzlichen Domains, die beim Prüfen den Beitrag nicht deaktivieren.]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_images"><![CDATA[Maximale Bilderanzahl]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_images.description"><![CDATA[Maximale Zahl an Bildern, die in ein Beitrag enthalten darf, bevor die Linkbeschränkung greift.]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_excluded_boards"><![CDATA[Ausgeschlossene Foren]]></item>

@@ -3,12 +3,13 @@ namespace wbb\system\event\listener;
 use wcf\system\event\IEventListener;
 use wcf\util;
 use wcf\system\WCF;
+use wcf\system\Regex;
 
 /**
- * Disables posts by board newcomers if their posts contains external links
+ * Disables posts by board newcomers if their posts contain external links
  *
  * @author      Oliver Schlöbe, Marcel Werk, Oliver Kliebisch
- * @copyright   2001-2009 WoltLab GmbH, 2014 Oliver Schlöbe
+ * @copyright   2001-2009 WoltLab GmbH, 2014-2015 Oliver Schlöbe
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		com.woltlab.wcf
  * @subpackage	system.event.listener
@@ -47,6 +48,13 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 	protected $imgCount = 0;
 
 	/**
+	 * list of custom URLs
+	 * @var	array<string>
+	 */
+	protected $customUrls = array();
+
+
+	/**
 	 * @see \wcf\system\event\IEventListener::execute()
 	 */
 	public function execute($obj, $className, $eventName) {
@@ -62,7 +70,7 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 				}
 
 				$data = $objects[0];
-
+				
 				// check all disablers
 				if ($data->isDisabled || !POST_LINKRESTRICTION_ENABLE
 					|| WCF::getSession()->getPermission('user.board.canBypassLinkRestriction')
@@ -124,7 +132,9 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 			$match1 = trim($match[1], '"=\'');
 			$match2 = trim($match[2], '"=\'');
 			if (!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match1) &&
-				!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match2)) {
+				!$this->isInternalURLCustom($match1) &&
+				!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match2) &&
+				!$this->isInternalURLCustom($match2)) {
 				$count++;
 			}
 		}
@@ -138,5 +148,42 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 		}
 
 		return $this->text;
+	}
+
+	/**
+	 * Additional custom URL checks
+	 */
+	private function isInternalURLCustom($url) {
+		$this->customUrls = $this->getCustomURLS();
+		$protocolRegex = new Regex('^https(?=://)');
+		
+		if( count($this->customUrls) > 0 ) {
+			foreach ($this->customUrls as $pageURL) {
+				if (stripos($protocolRegex->replace($url, 'http'), $pageURL) === 0) {
+					return true;
+				}
+			}
+		}
+		
+		return false;
+	}
+
+	/**
+	 * Get custom URLs from options
+	 */
+	private function getCustomURLS() {
+		$customURLs = explode(',', POST_LINKRESTRICTION_CUSTOM_URLS);
+		$customURLs = array_map(array($this, 'addHttpToCustomURLs'), $customURLs);
+		return $customURLs;
+	}
+	
+	/**
+	 * Auto add http scheme if it's not present
+	 */
+	function addHttpToCustomURLs($url) {
+		if (!empty($url) && $url!='' && !preg_match("~^(?:f|ht)tps?://~i", $url)) {
+			$url = "http://".$url;
+		}
+		return $url;
 	}
 }

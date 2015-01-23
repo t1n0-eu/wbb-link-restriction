@@ -13,6 +13,8 @@
 		<item name="wcf.acp.option.post_linkrestriction_enable_image_restriction.description"><![CDATA[If this is activated, img bbcodes are also considered in posts.]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_urls"><![CDATA[Maximum link count]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_urls.description"><![CDATA[The max number of links in a post before the link restriction activates.]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_custom_urls"><![CDATA[Custom internal URLs]]></item>
+		<item name="wcf.acp.option.post_linkrestriction_custom_urls.description"><![CDATA[A comma-separated list of domains to be considered internal when checking.]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_images"><![CDATA[Maximum image count]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_max_images.description"><![CDATA[The max number of images in a post before the link restriction activates.]]></item>
 		<item name="wcf.acp.option.post_linkrestriction_excluded_boards"><![CDATA[Excluded boards]]></item>
