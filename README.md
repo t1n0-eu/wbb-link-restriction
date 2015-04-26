@@ -1,4 +1,4 @@
-Anti-Spam: Link Restriction Plugin for WoltLab Burning Board 4.0
+Anti-Spam: Link Restriction Plugin for WoltLab Burning Board 4.x
 ====================
 
 **This plugin adds a feature that disables new posts, if they come from a user who has only a few submissions and contains external links. Thus, they must be tested first by a moderator. This will act against link spam, where users or spambots to register in the forum, only to publish links to external content and benefit from the links in search engines. Looks up to only external links.**
