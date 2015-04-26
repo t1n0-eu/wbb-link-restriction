@@ -1,6 +1,6 @@
 <?php
 namespace wbb\system\event\listener;
-use wcf\system\event\IEventListener;
+use wcf\system\event\listener\IParameterizedEventListener;
 use wcf\util;
 use wcf\system\WCF;
 use wcf\system\Regex;
@@ -15,7 +15,7 @@ use wcf\system\Regex;
  * @subpackage	system.event.listener
  * @category	Community Framework
  */
-class ThreadAddFormAntiURLSpamListener implements IEventListener {
+class ThreadAddFormAntiURLSpamListener implements IParameterizedEventListener {
 	private $illegalChars = '[^\x0-\x2C\x2E\x2F\x3A-\x40\x5B-\x60\x7B-\x7F]+';
 	private $sourceCodeRegEx = null;
 
@@ -55,16 +55,16 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 
 
 	/**
-	 * @see \wcf\system\event\IEventListener::execute()
+	 * @see \wcf\system\event\listener\IParameterizedEventListener::execute()
 	 */
-	public function execute($obj, $className, $eventName) {
-		$actionName = $obj->getActionName();
-		$parameters = $obj->getParameters();
+	public function execute($eventObj, $className, $eventName, array &$parameters) {
+		$actionName = $eventObj->getActionName();
+		$parameters = $eventObj->getParameters();
 
 		switch ($actionName) {
 			case 'triggerPublication':
 			case 'update':
-				$objects = $obj->getObjects();
+				$objects = $eventObj->getObjects();
 				if (empty($objects[0])) {
 					return;
 				}
@@ -88,7 +88,7 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 
 				if (($this->urlCount > POST_LINKRESTRICTION_MAX_URLS)
 					|| (POST_LINKRESTRICTION_ENABLE_IMAGE_RESTRICTION && $this->imgCount > POST_LINKRESTRICTION_MAX_IMAGES)) {
-					$obj->disable();
+					$eventObj->disable();
 				}
 				break;
 		}
@@ -131,9 +131,13 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 		foreach ($matches as $match) {
 			$match1 = trim($match[1], '"=\'');
 			$match2 = trim($match[2], '"=\'');
+			
 			if (!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match1) &&
-				!$this->isInternalURLCustom($match1) &&
-				!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match2) &&
+				!$this->isInternalURLCustom($match1)) {
+				$count++;
+			}
+			
+			if (!\wcf\system\application\ApplicationHandler::getInstance()->isInternalURL($match2) &&
 				!$this->isInternalURLCustom($match2)) {
 				$count++;
 			}
@@ -174,6 +178,7 @@ class ThreadAddFormAntiURLSpamListener implements IEventListener {
 	private function getCustomURLS() {
 		$customURLs = explode(',', POST_LINKRESTRICTION_CUSTOM_URLS);
 		$customURLs = array_map(array($this, 'addHttpToCustomURLs'), $customURLs);
+		
 		return $customURLs;
 	}
 	
