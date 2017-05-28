@@ -6,7 +6,7 @@
 				<categoryname>board.post.add</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
-				<enableoptions>post_linkrestriction_min_posts,post_linkrestriction_custom_urls,post_linkrestriction_max_urls,post_linkrestriction_enable_image_restriction</enableoptions>
+				<enableoptions>post_linkrestriction_min_posts,post_linkrestriction_custom_urls,post_linkrestriction_max_urls</enableoptions>
 			</option>
 			<option name="post_linkrestriction_min_posts">
 				<categoryname>board.post.add</categoryname>
@@ -22,17 +22,6 @@
 				<categoryname>board.post.add</categoryname>
 				<optiontype>text</optiontype>
 				<defaultvalue/>
-			</option>
-			<option name="post_linkrestriction_enable_image_restriction">
-				<categoryname>board.post.add</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>0</defaultvalue>
-				<enableoptions>post_linkrestriction_max_images</enableoptions>
-			</option>
-			<option name="post_linkrestriction_max_images">
-				<categoryname>board.post.add</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>0</defaultvalue>
 			</option>
         </options>
     </import>

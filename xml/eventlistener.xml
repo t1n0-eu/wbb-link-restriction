@@ -4,14 +4,14 @@
         <!-- user -->
 		<eventlistener>
   			<eventclassname><![CDATA[wbb\data\post\ThreadAction]]></eventclassname>
-  			<eventname>initializeAction</eventname>
+  			<eventname>finalizeAction</eventname>
   			<listenerclassname><![CDATA[wbb\system\event\listener\ThreadAddFormAntiURLSpamListener]]></listenerclassname>
   			<environment>user</environment>
   			<inherit>1</inherit>
  		</eventlistener>
 		<eventlistener>
   			<eventclassname><![CDATA[wbb\data\post\PostAction]]></eventclassname>
-  			<eventname>initializeAction</eventname>
+  			<eventname>finalizeAction</eventname>
   			<listenerclassname><![CDATA[wbb\system\event\listener\ThreadAddFormAntiURLSpamListener]]></listenerclassname>
   			<environment>user</environment>
   			<inherit>1</inherit>
