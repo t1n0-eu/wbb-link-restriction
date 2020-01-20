@@ -8,7 +8,7 @@ use wcf\system\Regex;
 /**
  * Disables posts by board newcomers if their posts contain external links
  *
- * @author      Oliver Schlöbe, Marcel Werk, Oliver Kliebisch
+ * @author      Oliver Schlöbe, Marcel Werk, Oliver Kliebisch, Tino Stange
  * @copyright   2001-2009 WoltLab GmbH, 2014-2017 Oliver Schlöbe
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		WoltLabSuite\Forum\System\Event\Listener
@@ -45,6 +45,7 @@ class ThreadAddFormAntiURLSpamListener implements IParameterizedEventListener {
 	 */
 	protected $customUrls = array();
 	
+	public $called = false;
 	
 	/**
 	 * @see \wcf\system\event\listener\IParameterizedEventListener::execute()
@@ -56,6 +57,13 @@ class ThreadAddFormAntiURLSpamListener implements IParameterizedEventListener {
 		switch ($actionName) {
 			case 'triggerPublication':
 			case 'update':
+				// prevent an recursive loop
+				if ($this->called === true) {
+					return;
+				}
+				
+				$this->called = true; 
+				
 				$objects = $eventObj->getObjects();
 				if (empty($objects[0])) {
 					return;
