@@ -1,0 +1,66 @@
+Lizenzbestimmungen Stand: 14.11.2023
+
+§1. Geltungsbereich 
+
+1.1. Die nachfolgenden Lizenzbestimmungen beziehen sich auf alle Softwareprodukte von T1N0.eu (im weiteren Hersteller genannt), die auf der 
+     Homepage https://www.t1n0.eu, Github oder im WoltLab Plugin-Store bereitgestellt werden.
+
+1.2. Es gelten ausschließlich die Bestimmungen dieser Lizenzvereinbarung. Mündlichen Nebenabreden oder etwaigen Geschäftsbedingungen 
+     des Käufers werden bereits jetzt widersprochen.
+
+1.3. Mit dem Download und der Installation des Produktes erklären Sie Ihr Einverständnis mit den vorliegenden Lizenzbestimmungen. 
+     Sind Sie mit den vorliegenden Bestimmungen nicht einverstanden, dürfen Sie diese Kopie des Produktes nicht installieren.
+
+1.4. Ihr Recht zur Nutzung des Produktes erlischt automatisch, wenn eine der Bedingungen dieser Lizenzbestimmungen verletzt wird. 
+     Beim Erlöschen des Nutzungsrechts sind Sie dazu verpflichtet, das Produkt auf den verwendeten Servern und Datenbanken zu löschen, 
+     sowie alle Kopien des Produktes, einschließlich der mitgelieferten Dokumentation und etwaigen veränderten und geänderten 
+     Versionen des Produktes, zu vernichten.
+
+1.5. Der Hersteller ist für Inhalte, die Dritte in einem kostenfrei zur Verfügung gestellten Produkt einstellen, nicht verantwortlich. 
+     Insbesondere ist der Hersteller durch die Herausgabe des Produktes weder Anbieter eigener Informationen gemäß § 8 TDG, noch 
+     Dienstanbieter fremder Informationen gemäß § 11 TDG.
+
+§2. Lizenzumfang 
+
+2.1. Der Hersteller räumt ein nicht ausschließliches, räumlich unbeschränktes Recht zur Nutzung des von Ihnen heruntergeladenen Produkts 
+     ein.
+
+2.2. Das von Ihnen heruntergeladene Produkt darf kommerziell genutzt werden.
+
+2.3. Inhalte, die unter einer eigenen Lizenz stehen, bleiben von dieser Lizenz unangetastet.
+
+§3. Weitergabe 
+
+3.1. Eine Weitergabe der Software ist nicht erlaubt.
+
+§4. Veränderungen 
+
+4.1. Sie dürfen den Quellcode des Produktes auf eigenes Risiko verändern, bearbeiten und auf Ihre Bedürfnisse sowohl grafisch 
+     als auch funktional anpassen.
+
+4.2. Copyrightvermerke, Seriennummern sowie sonstige der Software- und Quellcodeidentifikation dienende Merkmale des Produktes, 
+     insbesondere die sichtbaren Copyright-Hinweise sowie der darin enthaltene Link, dürfen auf keinen Fall entfernt oder verändert 
+     werden. Gleiches gilt für eine Unterdrückung oder Unkenntlichmachung.
+
+4.3. Etwas anderes gilt nur dann, wenn Sie vom Hersteller eine Zusatzlizenz erwerben, durch die Sie berechtigt sind, ausschließlich 
+     die sichtbaren Copyrighthinweise zu entfernen (Branding-Free-Lizenz). Diese Lizenz wird nicht für jedes Produkt angeboten.
+
+§5. Haftung 
+
+5.1. Der Hersteller übernimmt keine Haftung für eventuelle Schäden, Fehler, Datenverluste oder Ähnliches, die durch die Benutzung des Produktes 
+     entstehen könnten.
+
+§6. Rechtswahl und Gerichtsstand 
+
+6.1. Im Hinblick auf sämtliche Rechtsbeziehungen aus diesen Lizenzbestimmungen gilt das Recht der Bundesrepublik Deutschland.
+
+6.2. Sofern Sie Kaufmann im Sinne des Handelsgesetzbuches, juristische Person des öffentlichen Rechts oder öffentlich rechtliches Sondervermögen 
+     sind, wird für sämtliche Streitigkeiten, die im Rahmen der Abwicklung dieser Lizenzvereinbarung entstehen, Berlin als Gerichtstand vereinbart.
+
+§7. Salvatorische Klausel 
+
+7.1. Sollten einzelne Bestimmungen dieses Vertrages unwirksam oder undurchführbar sein oder nach Vertragsschluss unwirksam oder undurchführbar werden, 
+     bleibt davon die Wirksamkeit des Vertrages im Übrigen unberührt. An die Stelle der unwirksamen oder undurchführbaren Bestimmung soll diejenige 
+     wirksame und durchführbare Regelung treten, deren Wirkungen der wirtschaftlichen Zielsetzung am nächsten kommen, die die Vertragsparteien mit der 
+     unwirksamen bzw. undurchführbaren Bestimmung verfolgt haben. Die vorstehenden Bestimmungen gelten entsprechend für den Fall, dass sich der 
+     Vertrag als lückenhaft erweist.

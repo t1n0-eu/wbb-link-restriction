@@ -1,0 +1,66 @@
+Licence conditions Last Update: 14.11.2023
+
+§1. scope of application 
+
+1.1 The following licence terms apply to all software products from T1N0.eu (hereinafter referred to as the manufacturer) that are made available on the 
+    homepage https://www.t1n0.eu, Github or in the WoltLab Plugin-Store.
+
+1.2 The provisions of this licence agreement shall apply exclusively. Verbal ancillary agreements or any terms and conditions of business 
+    of the buyer are hereby rejected.
+
+1.3 By downloading and installing the product, you declare your agreement with these licence terms. 
+    If you do not agree to these terms and conditions, you may not install this copy of the product.
+
+1.4 Your right to use the product expires automatically if one of the conditions of these licence terms is violated. 
+    Upon termination of the right of use, you are obliged to delete the product from the servers and databases used, 
+    and to destroy all copies of the product, including the documentation supplied and any modified and altered versions of the product. 
+    versions of the product.
+
+1.5 The manufacturer is not responsible for content posted by third parties in a product provided free of charge. 
+    In particular, by publishing the product, the manufacturer is neither a provider of its own information pursuant to § 8 TDG, nor a service provider of third-party information pursuant to § 11 TDG. 
+    service provider of third-party information in accordance with § 11 TDG.
+
+§2 Scope of licence 
+
+2.1 The manufacturer grants a non-exclusive, geographically unlimited right to use the product downloaded by you. 
+    downloaded by you.
+
+2.2 The product you have downloaded may be used commercially.
+
+2.3 Content that is subject to a separate licence remains unaffected by this licence.
+
+§3. redistribution 
+
+3.1 Distribution of the software is not permitted.
+
+§4 Modifications 
+
+4.1 You may modify the source code of the product at your own risk, edit it and adapt it to your needs both graphically and functionally. 
+    graphically as well as functionally.
+
+4.2 Copyright notices, serial numbers and other features of the product that serve to identify the software and source code, 
+    the visible copyright notices and the link contained therein, may not be removed or changed under any circumstances. 
+    be removed or altered. The same applies to any suppression or obliteration.
+
+4.3 Something else only applies if you acquire an additional licence from the manufacturer, which entitles you to use only 
+    remove the visible copyright notices (branding-free licence). This licence is not offered for every product.
+
+§5 Liability 
+
+5.1 The manufacturer accepts no liability for any damage, errors, loss of data or similar that may arise through the use of the product. 
+    use of the product.
+
+§6 Choice of law and place of jurisdiction 
+
+6.1 The law of the Federal Republic of Germany shall apply to all legal relationships arising from these licence terms.
+
+6.2 If you are a merchant within the meaning of the German Commercial Code, a legal entity under public law or a special fund under public law, the place of jurisdiction shall be 
+    Berlin is agreed as the place of jurisdiction for all disputes arising in connection with the execution of this licence agreement.
+
+§7. severability clause 
+
+7.1 Should individual provisions of this contract be invalid or unenforceable or become invalid or unenforceable after conclusion of the contract, this shall not 
+    affect the validity of the remainder of the contract, this shall not affect the validity of the remainder of the contract. The invalid or unenforceable provision 
+    shall be replaced by a valid and enforceable effective and enforceable provision whose effects come closest to the economic objective that the contracting parties 
+    had intended with the invalid or unenforceable provision. the invalid or unenforceable provision. The above provisions shall apply accordingly in the event that 
+    the contract proves to be contract proves to be incomplete.
